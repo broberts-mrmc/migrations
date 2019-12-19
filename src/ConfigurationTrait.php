@@ -80,7 +80,7 @@ trait ConfigurationTrait
         $connectionConfig = ConnectionManager::getConfig($connection);
         $adapterName = $this->getAdapterName($connectionConfig['driver']);
 
-        $templatePath = __DIR__ . DS . 'Template' . DS;
+        $templatePath = __DIR__ . DS . 'Template' . DS; // This is where I'll be working on the change
         $config = [
             'paths' => [
                 'migrations' => $migrationsPath,
